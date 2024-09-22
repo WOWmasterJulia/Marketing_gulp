@@ -339,8 +339,8 @@
 
    .portfolio__content {
       column-count: 2;
-      column-gap: 1px;
-      justify-content: center;
+      column-gap: 10px;
+      /*justify-content: center;*/
       /* margin-bottom: 40px; */
    }
 
@@ -349,7 +349,7 @@
     } */
    .portfolio__item {
       overflow: hidden;
-      margin-bottom: 2px;
+      margin-bottom: 10px;
    }
    /*.portfolio__item img{
       max-width: 98%;
@@ -453,7 +453,19 @@
    .expertise__item {
       padding-left: 60px;
    }
+   .portfolio__content {
+      column-count: 1;
+      column-gap: 5px;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      /* margin-bottom: 40px; */
+   }
 
+   .portfolio__item {
+      overflow: hidden;
+      margin-bottom: 5px;
+   }
    .portfolio__numbers-item {
       width: 100%;
    }
