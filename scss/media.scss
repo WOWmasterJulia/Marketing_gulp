@@ -50,7 +50,6 @@
    }
 
    .about,
-   .portfolio,
    .slider-blog,
    .team,
    .pricing,
@@ -58,8 +57,10 @@
    .connection {
       padding: 85px 0;
    }
-   .expertise{
-      padding: 55px 0;
+   .portfolio,
+   .expertise,
+   .clients{
+      padding: 85px 0 55px;
    }
    .header__top-inner {
       padding-bottom: 5px;
@@ -197,6 +198,24 @@
 }
 
 @media(max-width: 860px) {
+   .about,
+   .slider-blog,
+   .team,
+   .pricing,
+   .pricing-new,
+   .connection {
+      padding: 55px 0;
+   }
+
+   .portfolio,
+   .expertise,
+   .clients {
+      padding: 55px 0 25px;
+   }
+   .footer__top {
+      padding: 55px 0;
+   }
+
    .expertise__items {
       /* display: block; */
       flex-wrap: wrap;
@@ -212,12 +231,12 @@
    .portfolio__content {
       column-count: 3;
       /* column-gap: 23px; */
-      margin-bottom: 40px;
+      margin-bottom: 55px;
    }
 
    .portfolio__top {
       display: block;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
    }
 
    .portfolio__filter-btn {
@@ -234,8 +253,9 @@
    }
    .portfolio__add, .blockquote,
    .portfolio__video {
-      margin-bottom: 85px;
+      margin-bottom: 55px;
    }
+   
    .slider-blog {
       padding: 0;
    }
@@ -340,20 +360,19 @@
    .portfolio__content {
       column-count: 2;
       column-gap: 10px;
-      /*justify-content: center;*/
+      /*justify-content: center;
+      display: flex;
+         flex-wrap: wrap;*/
       /* margin-bottom: 40px; */
    }
 
    /* .portfolio__btn{
-        display: block;
+         display: block;
     } */
    .portfolio__item {
       overflow: hidden;
       margin-bottom: 10px;
    }
-   /*.portfolio__item img{
-      max-width: 98%;
-   }*/
 
    .portfolio__filter-btn {
       flex-direction: column;
@@ -375,17 +394,13 @@
       margin-bottom: 40px;
    }
 
-   .portfolio__video {
-      margin-bottom: 75px;
-   }
-
    .portfolio__numbers {
       flex-wrap: wrap;
    }
 
    .portfolio__numbers-item {
       width: 50%;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
    }
 
    .slider-blog__item {
@@ -399,6 +414,9 @@
    .slider-blog__item-title {
       font-size: 24px;
       line-height: 1.24;
+   }
+   .footer__copy {
+         padding: 20px 10px;
    }
 }
 
@@ -461,7 +479,6 @@
       flex-wrap: wrap;
       /* margin-bottom: 40px; */
    }
-
    .portfolio__item {
       overflow: hidden;
       margin-bottom: 5px;
